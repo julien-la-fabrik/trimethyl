@@ -112,8 +112,9 @@ exports.fadeInUp = function(opt) {
 		view: opt.view,
 		startTransform: Matrix.i().t(0, -opt.offset).matrix,
 		endTransform: Matrix.i().matrix,
-		duration: opt.duration
-	}, opt.callback);
+		duration: opt.duration,
+		callback:opt.callback
+	});
 };
 
 /**
@@ -134,8 +135,9 @@ exports.fadeInLeft = function(opt) {
 		view: opt.view,
 		startTransform: Matrix.i().t(-opt.offset, 0).matrix,
 		endTransform: Matrix.i().matrix,
-		duration: opt.duration
-	}, opt.callback);
+		duration: opt.duration,
+		callback:opt.callback
+	});
 };
 
 /**
@@ -156,8 +158,9 @@ exports.fadeInBottom = function(opt) {
 		view: opt.view,
 		startTransform: Matrix.i().t(0, opt.offset).matrix,
 		endTransform: Matrix.i().matrix,
-		duration: opt.duration
-	}, opt.callback);
+		duration: opt.duration,
+		callback:opt.callback
+	});
 };
 
 /**
@@ -178,8 +181,9 @@ exports.fadeInRight = function(opt) {
 		view: opt.view,
 		startTransform: Matrix.i().t(opt.offset, 0).matrix,
 		endTransform: Matrix.i().matrix,
-		duration: opt.duration
-	}, opt.callback);
+		duration: opt.duration,
+		callback:opt.callback
+	});
 };
 
 /**
